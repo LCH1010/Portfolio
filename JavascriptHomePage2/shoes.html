@@ -1,0 +1,82 @@
+<html>
+<title>상품</title>
+<head>
+<style type="text/css">
+.represent {
+	border:1px solid #FF0000;
+	width:460px;
+	overflow:auto;
+}
+
+ul {
+	list-style:outside none none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:0;
+	float:left;
+	width:20%;
+}
+
+img {
+	width:100%;
+}
+</style>
+</head>
+
+
+<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+function changeRepresentImage(num) {
+	var link = jQuery(".imgServe").eq(num).attr("src");
+	jQuery("#imgRepresent").attr("src", link);
+}
+</script>
+<body>
+	<div class="represent">
+		<img id="imgRepresent" src="img/2.jpg" style="width:460px;height:460px;"/>
+		<ul>
+			<li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('0');">
+					<img class="imgServe" src="img/2.jpg"/>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('1');">
+					<img class="imgServe" src="img/3.jpg"/>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('2');">
+					<img class="imgServe" src="img/4.jpg"/>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('3');">
+					<img class="imgServe" src="img/5.jpg"/>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('4');">
+					<img class="imgServe" src="img/6.jpg"/>
+				</a>
+			</li>
+      <li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('5');">
+					<img class="imgServe" src="img/7.jpg"/>
+				</a>
+			</li>
+      <li>
+				<a href="javascript:;" onMouseover="changeRepresentImage('6');">
+					<img class="imgServe" src="img/8.jpg"/>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>

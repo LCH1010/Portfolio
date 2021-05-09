@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{margin:0 auto;padding:0;list-style:none;font-family:"맑은 고딕";box-sizing: border-box;}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+body,html{min-width:960px}
+img {max-width:100%;}
+.all{width:100%;float:left}
+.wrap{width:960px}
+.slideasdf{width:70%;}
+.content{width:500px}
+.clear{clear:both;position:inherit}
+.padder{padding-top:1000px}
+h1,h2,h3,h4,h5,h6,p,span {color:#666666;}
+
+.bb {position:relative;text-align:right;top:600px;}
+.aa {position:relative;margin:0;float:right;top:300px;}
+.clock {position:relative;margin:0;text-align:right;top:30px;}
+.header {position:relative;width:960px;margin:0 auto;min-height:180px;}
+.header .logo {padding-top:50px;}
+.nav_all {position:absolute;top:70px;right:-80px;}
+.nav > li {float:left;width:200px;text-align:center;position:relative;transition:all 0.4s;padding:5px 0;}
+.nav > li:hover {background-color:#009688;color:#fff;}
+.submenu{display:none;background-color:rgba(255,255,255,0.8);position:absolute;z-index:1;width:100%;margin-top:5px;}
+.submenu > li {padding:5px 0;transition:all 0.4s;color:#000;}
+.submenu > li:hover {background-color:#009658;color:}
+
+.imgslide {height:350px;}
+.imgs {position:relative;overflow:hidden;height:680px}
+.imgs > img {width:100%;position:absolute;transition:all 1s}
+
+.container1 {position:relative;width:960px;margin:0 auto;height:120px;}
+.container {position:relative;width:960px;margin:0 auto;height:120px;margin-top:330px}
+.notice {width:550px; margin-top:10px;float:left;right:60px}
+.tb01 {border-collapse:collapse; font-size:12px; color:#666666;}
+.tb01 tr > th{padding:5px 0}
+.tb01 tr > td{padding:5px}
+.tb01 tr:nth-child(2n) {background-color:rgba(0,255,0,0.5)}
+.txt_tit {font-size:30px;color:#4569F8;}
+
+.go_box {position:relative; ;left:-350px; width:300px; margin-top:120px;float:left;}
+.link_area a {display:inline-block;padding:5px 10px;background-color:#009688;border-radius:10px;color:#fff;}
+.go_box ul li {text-align:center;margin-bottom:20px; float:left;}
+
+.partner_box {width:360px; margin-top:10px;float:left;right: 50px}
+.banner_area {margin-top:10px;}
+
+.footer {position:relative;width:100%;margin:0 auto;background-color:#D6D3D3;overflow:hidden;padding:20px 0;color:##D6D3D3;height:250px;}
+.footer .section_1 {position:relative;font-size:11px;left:250px;}
+.footer .section_2 {position:relative;font-size:11px;left:500px;top:-105px;}
+.footer .section_3 {position:relative;font-size:11px;left:750px;top:-300px;}
+.footer .section_4 {position:relative;font-size:11px;left:1200px;top:-450px;}
+
+.counter h1 {
+      position: fixed;
+      top: 80%;
+      right: -1%;
+      transform: translate(-50%, -50%);
+      color: green;
+      font-size: 120px;
+      font-weight: bolder;
+
+}
+
+
+#navbar {
+      position: fixed;
+      right: 1%;
+      transition: top 0.7s;
+}

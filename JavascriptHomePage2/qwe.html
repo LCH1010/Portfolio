@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>
+    의류
+</title>
+</head>
+<body>
+
+    <table border = "1" style = "width : 800; height : 500">
+
+
+        <tr>
+            <th><img src = "img/z.jpg" width=200 height=200> </th>
+            <th> <img src = "img/x.jpg" width=200 height=200> </th>
+            <th> <img src = "img/c.jpg" width=200 height=200> </th>
+            <th> <img src = "img/v.jpg" width=200 height=200> </th>
+            <th> <img src = "img/b.jpg" width=200 height=200> </th>
+        </tr>
+
+
+        <tr>
+            <td> 가격 : 20000원 </td>
+            <td> 가격 : 30000원 </td>
+            <td> 가격 : 40000원 </td>
+            <td> 가격 : 50000원 </td>
+            <td> 가격 : 60000원 </td>
+        </tr>
+
+
+        <tr>
+            <td colspan = "5">
+              <script>
+
+                        $(document).ready(function(){
+                      $("p.error").hide();
+                      $(".submit").click(function(event){
+                      alert("submit");
+                       var count=0;
+                       var total=0;
+                       $('form#testForm').find(':checkbox').each(function(){
+                        if($(this).is(':checked')){
+
+                         count++;
+                         total+=parseInt($(this).val());
+                        }
+                       });
+                       alert(count+"  "+total);
+
+
+                       if(count==0){
+                        $(".result").hide();
+                        $(".error").show();
+                       }else{
+                           $(".result").show();
+                        $(".result").text("�ֹ��ݾ�:"+total);
+                        $(".error").hide();
+                       }
+                       event.preventDefault();
+                      });
+
+                     });
+
+                     </script>
+
+
+                       <form name="testForm" id="testForm">
+                         구매하실 상품을 선택하세요!!
+                      <br/>
+                    <input type="checkbox" name="menu" value="20000" id="pizza">
+                      치마 :20,000원<br/>
+                      <input type="checkbox" name="menu" value="30000" id="pizza">
+                        패딩 :30,000원<br/>
+                        <input type="checkbox" name="menu" value="40000" id="pizza">
+                          후드티 :40,000원<br/>
+                          <input type="checkbox" name="menu" value="50000" id="pizza">
+                            바지 :50,000원<br/>
+                            <input type="checkbox" name="menu" value="60000" id="pizza">
+                              체크남방 :60,000원<br/>
+
+                              <html>
+                              <head>
+                              <body>
+                              <script language='javascript'>
+                              function call()
+                              {
+                               if(document.getElementById("sell1").value && document.getElementById("sell2").value){
+                                document.getElementById('sell3').value =parseInt(document.getElementById('sell1').value) + parseInt(document.getElementById('sell2').value);
+                               }
+                              }
+                              </script>
+                              <form name='sumform'>
+                                계산해보기
+                              <input type='text' name='sell1' id='sell1' onkeyup='call()'> +
+                              <input type='text' name='sell2' id='sell2' onkeyup='call()'> =
+                              <input type='text' name='sell3' id='sell3' >
+                              </form>
+
+
+                              </body>
+                              </html>
+                              
+                    <input type="submit" class="submit" value="주문하기">
+                       </form>
+
+
+                      <form>
+                     <input type="checkbox" name="test">
+                     위 내용을 확인합니다
+                      </form> </td>
+
+        </tr>
+
+        <!-- 계산기 기능-->
+        <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+        <title>계산기</title>
+        <script language="javascript">
+        </script>
+        </head>
+        <body>
+        <form> <div id="a" class="aa">
+        <table border ="2" >
+        <tr>
+            <td colspan="5"><input type="text" id="display" size="50" value="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <input type="button" value="Clear" onclick="clearDisplay()" style="height:100%;width:100%;"></td>
+            <td colspan="3">
+            <input type="button" value="Enter" onclick="sum()" style="height:100%;width:100%;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="add('1')" style="height:100%;width:100%;"></td>
+            <td><input type="button" value="2" onclick="add('2')" style="height:100%;width:100%;"></td>
+            <td><input type="button" value="3" onclick="add('3')" style="height:100%;width:100%;"></td>
+            <td><input type="button" value="+" onclick="add('+')" style="height:100%;width:100%;"></td>
+        </tr>
+        <tr>
+             <td><input type="button" value="4" onclick="add('4')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="5" onclick="add('5')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="6" onclick="add('6')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="-" onclick="add('-')" style="height:100%;width:100%;"></td>
+        </tr>
+        <tr>
+             <td><input type="button" value="7" onclick="add('7')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="8" onclick="add('8')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="9" onclick="add('9')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="*" onclick="add('*')" style="height:100%;width:100%;"></td>
+        </tr>
+        <tr>
+             <td><input type="button" value="0" onclick="add('0')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="+/-" onclick="abs(this.form.display)" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="." onclick="add('.')" style="height:100%;width:100%;"></td>
+             <td><input type="button" value="/" onclick="add('/')" style="height:100%;width:100%;"></td>
+        <tr>
+<script>
+          var all = "";
+          function add(num) {
+          	all = all + num;
+          	document.getElementById("display").value = all;
+          }
+          function sum() {
+          	document.getElementById("display").value = eval(all);
+          }
+          function clearDisplay() {
+          	all = "";
+          	document.getElementById("display").value = "0";
+          }
+          function tan(all) {
+          	all.value = Math.tan((all.value * 3.141592) / 180);
+          }
+          function sin(all) {
+          	all.value = Math.sin((all.value * 3.141592) / 180);
+          }
+          function cos(all) {
+          	all.value = Math.cos((all.value * 3.141592) / 180);
+          }
+          function abs(all) {
+          	all.value = Math.abs(all.value);
+          }
+          function pow(all){
+          	all.value = Math.pow(all.value,2);
+          }                                   //계산기 기능
+          </script>
+        </table>
+        </form> </div>
+
+
+
+
+    </table>
+
+</body>
+</html>

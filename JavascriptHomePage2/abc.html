@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>회원가입</title>
+
+
+<script type="text/javascript">
+
+function sendIt(){
+	var f=document.forms[0];
+
+
+	if(! f.id.value){
+		alert("아이디를 입력하세요");
+		f.id.focus();
+		return;
+	}
+
+	if(f.id.value.length<5 || f.id.value.length>15){
+		alert("아이디는 5~15자만");
+		f.id.focus();
+		return;
+	}
+
+	if(! f.age.value){
+		alert("나이를 입력 하세요");
+		f.age.focus();
+		return;
+	}
+
+	if(isNaN(f.age.value)){
+		alert("숫자만 넣어주세요")
+		f.age.focus();
+		return;
+	}
+
+	var age=parseInt(f.age.value);
+
+	if(age<18){
+		alert("미성년자는 가입하실수 없습니다");
+		f.age.focus();
+		return;
+	}
+
+	if(! f.hak.value){
+		alert("학력을 입력해주세요");
+		f.hak.focus();
+		return;
+	}
+
+	var n=0;
+	for(var a=0; a<f.hobby.length; a++){
+		if(f.hobby[a].checked)
+			n++;
+	}
+
+	if(n==0){
+		alert("취미는 하나 이상 선택해주세요");
+		f.hobby[0].focus();
+		return;
+	}
+
+	alert("안녕하세요");
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="">
+
+아이디 :
+<input type="text" name="id" size="100px" maxlength="10px" style="width :100 px; height:25px ;padding: 5px ; border : 0px"><br/>
+
+
+이름 :
+<input type="text" name="name" value="홍길동"/><br/>
+
+
+나이 :
+<input type="text" name="age"><br/>
+
+패스워드 :
+<input type="password" name="pwd"/><br/>
+
+
+성별 :
+<input type="radio" value="남" name="gender" checked="checked"/>남
+<input type="radio" value="여" name="gender"/>여<br/>
+
+
+학력:
+<select name="hak">
+	<option value="">:: 선택 ::</option>
+	<option value="대졸" selected="selected"> 대졸 </option>
+	<option value="대졸"> 고졸 </option>
+	<option value="대졸"> 기타 </option>
+</select><br/>
+
+취미:
+<input type="checkbox" value="운동" name="hobby">운동
+<input type="checkbox" value="영화" name="hobby">게임
+<input type="checkbox" value="독서" name="hobby">독서
+<input type="checkbox" value="게임" name="hobby">영화
+<input type="checkbox" value="낚시" name="hobby">당구<br/>
+
+사고싶은물품:
+
+<select name="it" multiple="multiple" size="5">
+<option value="신발"> 신발</option>
+<option value="의류"> 의류</option>
+<option value="모자"> 모자</option>
+<option value="지갑"> 지갑</option>
+</select><br/>
+
+
+가입경로
+<textarea rows="5" cols="50" name="memo"></textarea>
+<br/>
+
+
+<input type="reset" value="다시입력">
+
+<input type="button" value="등록하기" onclick="sendIt();">
+
+<br/>
+
+</form>
+</body>
+</html>
