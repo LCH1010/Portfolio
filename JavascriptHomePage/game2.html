@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>숫자 정확히 멈추기</title>
+</head>
+<body>
+
+<script LANGUAGE="JavaScript">
+function Title() {document.title="숫자 정확히 멈추기"; window.setTimeout("Title1();",1);}
+	counter=0;
+function Counter1() {
+	window.status="Counter: " + counter;
+	document.game.number.value=counter;
+	counter++;
+	Time=window.setTimeout("Counter1();",1);
+	if (counter==106) {
+		counter=0;
+	}
+}
+
+function Results() {
+	window.clearTimeout(Time);
+	if (counter==101) {
+		alert("대단하십니다 !  정확히 100에 멈추셧군요.");
+	}
+	if (counter!=101) {
+		counter--;
+		alert("아쉽게도 아닙니다ㅠ선택하신 숫자는 " + counter + " 입니다. \n\n 할수있어요! 한번더!");
+	}
+	counter=0;
+window.status="Counter: " + counter;
+document.game.number.value=counter;
+}
+</script>
+
+<body onLoad="Title();" onKeyPress="Results();">
+
+<br>
+<b>게임 설명</b><br>
+시작하면 숫자가 돌아갑니다 100이 될거같으면 멈춰주세요!.<br>
+5번안에 성공하시면 <B>할인이벤트권</B>을 드립니다!
+<form name="game">
+	<input type="text" name="number" VALUE="0" onFocus="this.blur();" style="font-size: 240;font-family:arial black;width:500;color:blue"><BR>
+	<input type="button" VALUE="Start" onClick="Counter1(); counter=0;"> <input type="button" VALUE="Stop!" onClick="Results(); counter=0;">
+</form>
+
+</body>
+</html>

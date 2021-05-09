@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>
+    의류
+</title>
+</head>
+<body>
+
+    <table border = "1" style = "width : 800; height : 500">
+
+
+        <tr>
+            <th><img src = "img/z.jpg" width=200 height=200> </th>
+            <th> <img src = "img/x.jpg" width=200 height=200> </th>
+            <th> <img src = "img/c.jpg" width=200 height=200> </th>
+            <th> <img src = "img/v.jpg" width=200 height=200> </th>
+            <th> <img src = "img/b.jpg" width=200 height=200> </th>
+        </tr>
+
+
+        <tr>
+            <td> 가격 : 20000원 </td>
+            <td> 가격 : 30000원 </td>
+            <td> 가격 : 40000원 </td>
+            <td> 가격 : 50000원 </td>
+            <td> 가격 : 60000원 </td>
+        </tr>
+
+
+        <tr>
+            <td colspan = "5">
+              <script>
+
+                        $(document).ready(function(){
+                      $("p.error").hide();
+                      $(".submit").click(function(event){
+                      alert("submit");
+                       var count=0;
+                       var total=0;
+                       $('form#testForm').find(':checkbox').each(function(){
+                        if($(this).is(':checked')){
+
+                         count++;
+                         total+=parseInt($(this).val());
+                        }
+                       });
+                       alert(count+"  "+total);
+
+
+                       if(count==0){
+                        $(".result").hide();
+                        $(".error").show();
+                       }else{
+                           $(".result").show();
+                        $(".result").text("�ֹ��ݾ�:"+total);
+                        $(".error").hide();
+                       }
+                       event.preventDefault();
+                      });
+
+                     });
+
+                     </script>
+
+
+                       <form name="testForm" id="testForm">
+                         구매하실 상품을 선택하세요!!
+                      <br/>
+                    <input type="checkbox" name="menu" value="20000" id="pizza">
+                      치마 :20,000원<br/>
+                      <input type="checkbox" name="menu" value="30000" id="pizza">
+                        패딩 :30,000원<br/>
+                        <input type="checkbox" name="menu" value="40000" id="pizza">
+                          후드티 :40,000원<br/>
+                          <input type="checkbox" name="menu" value="50000" id="pizza">
+                            바지 :50,000원<br/>
+                            <input type="checkbox" name="menu" value="60000" id="pizza">
+                              체크남방 :60,000원<br/>
+
+                     <p class="error">복수선택 가능합니다!</p>
+                     <p class="result"></p>
+
+                    <input type="submit" class="submit" value="주문">
+                       </form>
+
+
+                      <form>
+                     <input type="checkbox" name="test">
+                     위 내용을 확인합니다
+                      </form> </td>
+
+        </tr>
+
+
+
+
+
+    </table>
+
+</body>
+</html>
