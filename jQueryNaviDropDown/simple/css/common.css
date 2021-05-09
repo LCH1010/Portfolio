@@ -1,0 +1,59 @@
+@charset "utf-8";
+*{margin:0 auto;padding:0;list-style:none;font-family:"맑은 고딕";box-sizing: border-box;}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+body,html{min-width:960px}
+img {max-width:100%;}
+.all{width:100%;float:left}
+.wrap{width:960px}
+.slideasdf{width:960px}
+.content{width:960px}
+.clear{clear:both;position:inherit}
+.padder{padding-top:1000px}
+h1,h2,h3,h4,h5,h6,p,span {color:#666666;}
+
+.header {position:relative;width:960px;margin:0 auto;min-height:200px;}
+.header .logo {padding-top:30px;}
+.nav_all {position:absolute;top:76px;right:10px;}
+.nav > li {float:left;width:200px;text-align:center;position:relative;transition:all 0.4s;padding:5px 0;}
+.nav > li:hover {background-color:#009688;color:#fff;}
+.submenu{display:none;background-color:rgba(255,255,255,0.8);position:absolute;z-index:1;width:100%;margin-top:5px;}
+.submenu > li {padding:5px 0;transition:all 0.4s;color:#000;}
+.submenu > li:hover {background-color:#009658;color:}
+
+.imgslide {height:350px;}
+.imgs {position:relative;overflow:hidden;height:350px;background-color:#000}
+.imgs > img {width:100%;position:absolute;transition:all 1s}
+.welcome {z-index:100;position:absolute;margin:-50px 0 0 -150px !important;text-align:center;width:300px;height:100px;line-height:50px;background-color:rgba(255,255,255,0.8);border-radius:30px;left:50%;top:50%;}
+.welcome h1 span {color:#009688;}
+.welcome h3 span {color:#6a6a6a;}
+
+.container {position:relative;width:960px;margin:0 auto;height:500px;}
+.notice {width:400px; margin-top:10px;float:left}
+.tb01 {border-collapse:collapse; font-size:12px; color:#666666;}
+.tb01 tr > th{padding:5px 0}
+.tb01 tr > td{padding:5px}
+.tb01 tr:nth-child(2n) {background-color:rgba(0,255,0,0.5)}
+.txt_tit {font-size:14px;}
+
+.go_box {width:200px; margin-top:10px;float:left}
+.link_area a {display:inline-block;padding:5px 10px;background-color:#009688;border-radius:10px;color:#fff;}
+.go_box ul li {text-align:center;margin-bottom:20px;}
+
+.partner_box {width:360px; margin-top:10px;float:left}
+.banner_area {margin-top:10px;}
+
+.footer {position:relative;width:960px;margin:0 auto;background-color:#009688;overflow:hidden;padding:20px 0;color:#fff;height:150px;}
+.footer_list {overflow:hidden;float:left;margin-left:20px;}
+.footer_list li {float:left;padding:5px;}
+.footer .section_right {float:right;font-size:11px;}
+
+
+
+
+
+
+
+
+
+
