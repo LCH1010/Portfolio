@@ -1,0 +1,88 @@
+* { margin:0;padding:0; }
+
+body {
+    font-family:"맑은 고딕", "돋움";
+    font-size:12px;
+    color:#444444;
+	overflow-x:hidden;
+	height:900px;
+} <!-- x축y축 고정해준것 -->
+
+ul { list-style-type:none; }
+
+#wrap { width:980px; margin:0 auto;}
+
+header { height:130px; position:relative; top:10px}
+
+.logo { position:absolute; top:20px; left:-40px;}
+
+header #top_menu { position:absolute; float:left; top:-15px; right:-733px; margin:2px 30px;}
+
+header #main_menu { position:absolute; float:right; top:25px;left:400px; width:1500px; font-family:"맑은 고딕";}
+
+header #main_menu li { display:inline-block; margin:2px 30px 0 8px; font-size:18px;}
+
+header #main_menu a:link { text-decoration:none ;color:#000000;}  
+
+.nav > li:hover {background-color:#94c94a;color:#fff;}
+
+<!-- header -->
+
+.imgslide {height:400px;width:100%}
+.imgs {position:relative; width:100%; height:150%; top:-20px;}
+.imgs > img {width:150%;position:relative;left:-240px;}
+<!-- 메인 이미지 -->
+
+.container {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px;}
+.container2 {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px; left:30px;}
+.container3 {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px; left:600px; top:-180px;}
+.container4 {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px; left:-50px;top:-90px;}
+.container5 {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px; left:280px;top:-240px;}
+.container6 {position:relative;width:980px;margin:0 auto;height:150px;padding:0 50px; left:600px;top:-390px;}
+.txt_tit1 {font-size:25px; width:500px;margin-top:1px;}
+.txt_tit2 {font-size:25px; width:500px;position:relative; top:-50px;}
+.txt_tit3 {font-size:25px; width:500px;position:relative; top:-20px;}
+.txt_tit4 {font-size:25px; width:500px;position:relative; top:-20px;}
+.txt_tit5 {font-size:25px; width:500px;position:relative; top:-20px;}
+.txt_tit6 {font-size:25px; width:500px;position:relative; top:-20px;}
+.more1{position:relative;left:200px;top:-205px;}
+.more2{position:relative;left:285px;top:-210px;}
+.more3{position:relative;left:260px;top:-210px;}
+.more4{position:relative;left:200px;top:-210px;}
+.more5{position:relative;left:500px;top:-220px;}
+.more6{position:relative;left:140px;top:-220px;}
+
+/* 공지사항 박스 */
+.notice{font-size:13px;}
+.notice {width:300px; margin-top:10px;float:left;}
+
+/* 채용정보 박스 */
+.free{width:300px; position:relative; top:-40px; font-size:13px; margin-bottom:5px; }
+
+/* 우리들의 순간 박스 */
+.a{width:300px; position:relative; top:-10px; font-size:13px; margin-bottom:5px; }
+
+/* 우리학과 뉴스레터 */
+.b{width:300px; position:relative; top:-10px; font-size:13px; margin-bottom:5px; }
+
+/* 웹it전공 입학안내 박스 */
+.c{width:300px; position:relative; top:-10px; font-size:13px; margin-bottom:5px; }
+
+/* 우리들의 영상 박스 */
+.d{width:300px; position:relative; top:-10px; font-size:13px; margin-bottom:5px; }
+
+
+
+footer {height:100px;background:#aaa8a8;position:absolute; top:1000px;width:980px;}
+footer #footer_logo {float:left;margin:5px 0 0 210px;}
+footer #address {float:left;margin:20px 0 0 50px;}
+footer #footer_sns {float:right;margin:20px 10px 0 0;}
+footer #footer_sns li {display:inline;}
+
+
+.ba{ position:absolute; width:200%;top:100px; background: linear-gradient( to bottom, #BDBDBD 10%, #fff 90%);left:-470px;}
+
+
+
+
+
